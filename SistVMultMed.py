@@ -114,6 +114,16 @@ def main():
                 nm=int(input("Ingrese cantidad de medicamentos: "))
                 lista_med=[]
 
+                for j in lista_med:
+                    if medicamentos == j.verNombre():
+                        print("Ya existe este medicamento para la mascota")
+                    else:
+                        medicamentos.asignarNombre(nombre_medicamentos)
+                        medicamento.asignarDosis(dosis)
+                        lista_med.append(medicamento)
+                
+
+
                 for i in range(0,nm):
                     nombre_medicamentos = input("Ingrese el nombre del medicamento: ")
                     dosis =int(input("Ingrese la dosis: "))
